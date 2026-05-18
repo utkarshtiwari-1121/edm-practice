@@ -1,0 +1,17 @@
+                </td>
+                <td>
+
+            <tr>
+
+                <td> <img src="img/corsa studio.png" alt="corsa studio" width="100%"
+                        style="display:block; width:100%; max-width:100%;"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="img/location.png" alt="location" width="100%"
+                        style="display:block; width:100%; max-width:100%;">Kerala
+                    Corsa Studio
+                </td>
+            </tr>
+
