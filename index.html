@@ -8,69 +8,37 @@
       content="telephone=no, date=no, address=no, email=no, url=no"
     />
     <title>Practice EDM</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
 
-    <!--
-      SENDING TIP: Many email tools (Mailchimp, HubSpot, etc.) "inline CSS" and
-      DELETE @media rules. Disable CSS inlining / enable "embedded styles" in
-      your ESP, or media queries will never reach the inbox. Outlook desktop
-      never supports @media — it always shows the desktop version.
-    -->
-    <style type="text/css">
+    <style>
+      /* Hide mobile section on desktop */
+      /* Hide mobile section on desktop */
       .ignite-column_mobile {
         display: none !important;
-        mso-hide: all !important;
-        width: 0 !important;
-        height: 0 !important;
+        mso-hide: all !important; /* Important for Outlook */
         max-height: 0 !important;
         overflow: hidden !important;
         font-size: 0 !important;
         line-height: 0 !important;
-        border: 0 !important;
       }
 
-      @media only screen and (max-width: 600px),
-        only screen and (max-device-width: 600px) {
-        tr.ignite-column_desktop,
-        td.ignite-column_desktop,
-        table.ignite-column_desktop,
+      /* Mobile styles */
+      @media only screen and (max-width: 540px) {
+        /* Hide desktop section completely on mobile */
         .ignite-column_desktop {
           display: none !important;
+          visibility: hidden !important;
           mso-hide: all !important;
-          width: 0 !important;
-          height: 0 !important;
           max-height: 0 !important;
           overflow: hidden !important;
-          visibility: hidden !important;
           font-size: 0 !important;
           line-height: 0 !important;
-          border: 0 !important;
-          padding: 0 !important;
-          margin: 0 !important;
         }
 
-        tr.ignite-column_mobile {
-          display: table-row !important;
-          width: auto !important;
-          height: auto !important;
-          max-height: none !important;
-          overflow: visible !important;
-          font-size: inherit !important;
-          line-height: inherit !important;
-        }
-        td.ignite-column_mobile {
-          display: table-cell !important;
-          width: auto !important;
-          height: auto !important;
-          max-height: none !important;
-          overflow: visible !important;
-          font-size: inherit !important;
-          line-height: inherit !important;
-        }
-        table.ignite-column_mobile {
+        /* Show mobile section on mobile */
+        .ignite-column_mobile {
           display: table !important;
           width: 100% !important;
-          height: auto !important;
           max-height: none !important;
           overflow: visible !important;
           font-size: inherit !important;
@@ -80,6 +48,49 @@
     </style>
   </head>
 
+  <!-- <style>
+    .ignite-column_mobile{
+    display: none !important;
+}
+
+.expanding-text{
+    padding-top: 50px !important;
+}
+
+.ignite-column_mobile{
+  display: none !important;
+}
+
+
+@media only screen and (max-width: 540px) {
+    .image-column , 
+    .image-column td {
+      display: block !important;
+      width: 97% !important;
+      max-width: 100% !important;
+      padding: 10px 0px !important;
+      margin: 0 auto !important;
+    }
+
+      .ignite-column_mobile {
+      display: block !important;
+      /* width: 97% !important;
+      max-width: 100% !important;
+      padding: 10px 0px !important;
+      margin: 0 auto !important; */ 
+    }
+  
+    .expanding-text{
+        padding-top: 10px !important;
+    }
+    
+
+  .ignite-column_desktop {
+    display: none !important;
+  }
+
+}
+</style> -->
 
   <body
     style="
@@ -89,70 +100,6 @@
       font-family: Arial, Helvetica, sans-serif;
     "
   >
-    <!-- Duplicate styles: Gmail / some ESPs keep body <style>, strip or weaken <head> -->
-    <style type="text/css">
-      .ignite-column_mobile {
-        display: none !important;
-        mso-hide: all !important;
-        width: 0 !important;
-        height: 0 !important;
-        max-height: 0 !important;
-        overflow: hidden !important;
-        font-size: 0 !important;
-        line-height: 0 !important;
-        border: 0 !important;
-      }
-
-      @media only screen and (max-width: 600px),
-        only screen and (max-device-width: 600px) {
-        tr.ignite-column_desktop,
-        td.ignite-column_desktop,
-        table.ignite-column_desktop,
-        .ignite-column_desktop {
-          display: none !important;
-          mso-hide: all !important;
-          width: 0 !important;
-          height: 0 !important;
-          max-height: 0 !important;
-          overflow: hidden !important;
-          visibility: hidden !important;
-          font-size: 0 !important;
-          line-height: 0 !important;
-          border: 0 !important;
-          padding: 0 !important;
-          margin: 0 !important;
-        }
-
-        tr.ignite-column_mobile {
-          display: table-row !important;
-          width: auto !important;
-          height: auto !important;
-          max-height: none !important;
-          overflow: visible !important;
-          font-size: inherit !important;
-          line-height: inherit !important;
-        }
-        td.ignite-column_mobile {
-          display: table-cell !important;
-          width: auto !important;
-          height: auto !important;
-          max-height: none !important;
-          overflow: visible !important;
-          font-size: inherit !important;
-          line-height: inherit !important;
-        }
-        table.ignite-column_mobile {
-          display: table !important;
-          width: 100% !important;
-          height: auto !important;
-          max-height: none !important;
-          overflow: visible !important;
-          font-size: inherit !important;
-          line-height: inherit !important;
-        }
-      }
-    </style>
-
     <table
       cellspacing="0"
       cellpadding="0"
@@ -376,23 +323,15 @@
       <!-- IGNITE 2025 SECTION IGNITE 2025 SECTION IGNITE 2025 SECTION-->
 
       <!-- DESKTOP SECTION -->
-      <!-- ========================================== -->
-      <!-- DESKTOP SECTION                            -->
-      <!-- ========================================== -->
       <tr class="ignite-column_desktop">
-        <td class="ignite-column_desktop" style="padding: 0">
+        <td class="ignite-column_desktop">
           <table
             class="ignite-column_desktop"
             cellspacing="0"
             cellpadding="0"
             border="0"
             role="presentation"
-            style="
-              width: 100%;
-              max-width: 700px;
-              background-color: #520000;
-              margin: 0 auto;
-            "
+            style="width: 700px; background-color: #520000; margin: 0 auto"
           >
             <tr>
               <td
@@ -432,6 +371,7 @@
                       Impactful Initiatives That Drive Change
                     </td>
                   </tr>
+
                   <tr>
                     <td
                       style="
@@ -462,16 +402,35 @@
                 />
               </td>
             </tr>
+          </table>
+        </td>
+      </tr>
 
-            <!-- DESKTOP LABELS + CTA -->
+      <!-- DESKTOP LABEL + CTA SECTION -->
+      <tr class="ignite-column_desktop">
+        <td class="ignite-column_desktop">
+          <table
+            class="ignite-column_desktop"
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            role="presentation"
+            style="
+              max-width: 700px;
+              width: 100%;
+              background-color: #520000;
+              margin: 0 auto;
+            "
+          >
             <tr align="center">
               <td
                 align="center"
-                style="font-size: 14px; color: white; padding: 0 0 20px 20px"
+                style="font-size: 14px; color: white; padding: 0 0 0 20px"
               >
                 IGNITE 2025
               </td>
-              <td style="padding: 0 0 20px 0">
+
+              <td>
                 <table
                   cellspacing="0"
                   cellpadding="0"
@@ -505,9 +464,10 @@
                   </tr>
                 </table>
               </td>
+
               <td
                 align="center"
-                style="font-size: 14px; color: white; padding: 0 20px 20px 0"
+                style="font-size: 14px; color: white; padding: 0 20px 0 0"
               >
                 Greenspace
               </td>
@@ -515,52 +475,22 @@
           </table>
         </td>
       </tr>
-
-      <!-- ========================================== -->
-      <!-- MOBILE SECTION                             -->
-      <!-- ========================================== -->
-      <!-- Mobile: inline display:none is the default; @media !important overrides it on phones -->
-      <tr
-        class="ignite-column_mobile"
-        style="
-          display: none;
-          max-height: 0;
-          overflow: hidden;
-          mso-hide: all;
-          font-size: 0;
-          line-height: 0;
-        "
-      >
-        <td
-          class="ignite-column_mobile"
-          style="
-            display: none;
-            max-height: 0;
-            overflow: hidden;
-            mso-hide: all;
-            padding: 0;
-            font-size: 0;
-            line-height: 0;
-          "
-        >
+      <tr>
+        <td>
           <table
             cellspacing="0"
             cellpadding="0"
             border="0"
             role="presentation"
+            width="700"
             class="ignite-column_mobile"
             style="
-              display: none;
-              width: 100%;
+              width: 700px;
               max-width: 700px;
               background-color: #520000;
               margin: 0 auto;
               border-collapse: collapse;
-              max-height: 0;
-              overflow: hidden;
-              mso-hide: all;
-              font-size: 0;
-              line-height: 0;
+              /* display: none; */
             "
           >
             <tr>
@@ -582,7 +512,7 @@
                   "
                 />
               </td>
-              <!-- RIGHT IMAGE -->
+
               <td
                 width="50%"
                 valign="top"
@@ -591,18 +521,13 @@
                 <img
                   src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/green%20scape.png"
                   alt="Greenspace"
-                  style="
-                    display: block;
-                    width: 100%;
-                    max-width: 100%;
-                    height: auto;
-                    border: 0;
-                  "
+                  style="width: 100%; max-width: 100%; height: auto; border: 0"
                 />
               </td>
             </tr>
 
             <tr>
+              <!-- LEFT LABEL -->
               <td
                 align="center"
                 style="
@@ -613,6 +538,8 @@
               >
                 IGNITE 2025
               </td>
+
+              <!-- RIGHT LABEL -->
               <td
                 align="center"
                 style="
@@ -674,8 +601,11 @@
                     <td
                       align="center"
                       style="
+                        color: #ffffff;
+                        font-size: 14px;
                         text-align: center;
                         padding: 7px 12px;
+                        font-weight: 100;
                         border: 1px solid rgba(255, 0, 0, 0.678);
                         border-radius: 30px;
                         box-shadow: inset 0px 0px 20px 6px #7e0101;
@@ -685,8 +615,6 @@
                         href="#"
                         style="
                           color: #ffffff;
-                          font-size: 14px;
-                          font-weight: 100;
                           text-decoration: none;
                           display: inline-block;
                         "
@@ -701,6 +629,7 @@
           </table>
         </td>
       </tr>
+
       <tr>
         <td>
           <table
