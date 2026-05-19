@@ -14,17 +14,25 @@
       /* Hide mobile section on desktop */
       /* Hide mobile section on desktop */
       .ignite-column_mobile {
-        display: none !important;
-        mso-hide: all !important; /* Important for Outlook */
-        max-height: 0 !important;
+        /* display: none !important; */
+        /* mso-hide: all !important;  */
+        /* max-height: 0 !important;
         overflow: hidden !important;
         font-size: 0 !important;
-        line-height: 0 !important;
+        line-height: 0 !important; */
+      }
+      .expanding-text {
+        /* padding-top: 50px !important; */
+      }
+
+      .car-image {
+        /* aspect-ratio: 1/1 !important; */
+        /* width: 100% !important; */
       }
 
       /* Mobile styles */
-      @media only screen and (max-width: 540px) {
-        /* Hide desktop section completely on mobile */
+      @media only screen and (max-width: 600px),
+        only screen and (max-device-width: 600px) {
         .ignite-column_desktop {
           display: none !important;
           visibility: hidden !important;
@@ -35,79 +43,63 @@
           line-height: 0 !important;
         }
 
-        /* Show mobile section on mobile */
-        .ignite-column_mobile {
-          display: table !important;
-          width: 100% !important;
-          max-height: none !important;
-          overflow: visible !important;
-          font-size: inherit !important;
-          line-height: inherit !important;
-        }
-
+        /* Stack car images full-width (was 50% side-by-side = tiny on phone) */
         .image-column,
         .image-column td {
           display: block !important;
-          width: 97% !important;
+          width: 100% !important;
           max-width: 100% !important;
-          padding: 10px 0px !important;
+          padding: 10px 15px !important;
           margin: 0 auto !important;
+          box-sizing: border-box !important;
+        }
+
+        .image-column img,
+        .mobile-full-image {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          border: 0 !important;
+        }
+
+        .mobile-image-padding {
+          padding: 10px 15px !important;
         }
 
         .expanding-text {
-          /* padding-top: 10px !important; */
+          padding-top: 10px !important;
         }
 
-        .ignite-column_desktop {
-          display: none !important;
+        tr.image-column {
+          display: block !important;
+          width: 100% !important;
+        }
+
+        /* Force each table cell to become a full-width stackable block */
+        td.mobile-image-padding {
+          display: block !important;
+          width: 100% !important;
+          box-sizing: border-box;
+          padding: 15px 15px 0px 15px !important; /* Adjust spacing between stacked images */
+        }
+
+        /* Ensure the image scales up beautifully to fill the new wide column */
+        img.mobile-full-image {
+          display: block !important;
+
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+        }
+
+        .car-image {
+          /* aspect-ratio: 1/1 !important; */
+          /* width: 100% !important; */
         }
       }
     </style>
   </head>
-
-  <!-- <style>
-    .ignite-column_mobile{
-    display: none !important;
-}
-
-.expanding-text{
-    padding-top: 50px !important;
-}
-
-.ignite-column_mobile{
-  display: none !important;
-}
-
-
-@media only screen and (max-width: 540px) {
-    .image-column , 
-    .image-column td {
-      display: block !important;
-      width: 97% !important;
-      max-width: 100% !important;
-      padding: 10px 0px !important;
-      margin: 0 auto !important;
-    }
-
-      .ignite-column_mobile {
-      display: block !important;
-      /* width: 97% !important;
-      max-width: 100% !important;
-      padding: 10px 0px !important;
-      margin: 0 auto !important; */ 
-    }
-  
-    .expanding-text{
-        padding-top: 10px !important;
-    }
-    
-
-  .ignite-column_desktop {
-    display: none !important;
-  }
-
-}
-</style> -->
 
   <body
     style="
@@ -230,8 +222,8 @@
                     </tr>
 
                 </table> -->
-
-          <table
+          <!-- responsive table for the images ___________________________________________ -->
+          <!-- <table
             cellspacing="0"
             cellpadding="0"
             border="0"
@@ -275,7 +267,7 @@
                 <img
                   src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/car%202.png"
                   alt="car 2"
-                  width="320"
+                  width=""
                   class="mobile-full-image"
                   style="
                     display: block;
@@ -333,6 +325,111 @@
                 </table>
               </td>
             </tr>
+          </table> -->
+          <!-- ___________________________________________________________________________________________ -->
+
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            role="presentation"
+            align="center"
+            style="
+              max-width: 700px;
+              width: 100%;
+              background-color: #520000;
+              border-collapse: collapse;
+              border-spacing: 0;
+              margin: 0 auto;
+              padding: 0;
+            "
+          >
+            <tr>
+              <!-- Left Column: Stripped of side padding to maximize image width -->
+              <td
+                class="car-image"
+                width="22rem"
+                style="width: 22rem; padding: 4px 10px 4px 20px; vertical-align: middle"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/car%201%202.png"
+                  alt="car 1"
+                  style="
+                    display: block;
+                    width: 22rem !important;
+                    max-width: 100%;
+                    height: auto !important;
+                    border: 0;
+                    aspect-ratio: 1.4/1 !important;
+                    /* border: 1px solid red; */
+                  "
+                />
+              </td>
+
+              <!-- Right Column: Stripped of side padding to maximize image width -->
+              <td
+                class="car-image"
+                width="22rem"
+                style="width: 22rem; padding: 4px 20px 4px 10px; vertical-align: middle"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/car%202.png"
+                  alt="car 2"
+                  style="
+                    display: block;
+                    width: 22rem !important;
+                    max-width: 100%;
+                    height: auto !important;
+                    border: 0;
+                    aspect-ratio: 1.4/1 !important;
+
+                    /* border: 1px solid rgb(9, 255, 0); */
+                  "
+                />
+              </td>
+            </tr>
+
+            <!-- CTA Button Row -->
+            <tr align="center">
+              <td colspan="2" align="center" style="padding: 20px 0">
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                  align="center"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        color: #ffffff;
+                        font-size: 14px;
+                        text-align: center;
+                        padding: 7px 12px;
+                        font-weight: 100;
+                        border: 1px solid rgba(255, 0, 0, 0.678);
+                        border-radius: 30px;
+                        box-shadow: inset 0px 0px 20px 6px #7e0101;
+                      "
+                    >
+                      <a
+                        href="#"
+                        style="
+                          color: #ffffff;
+                          text-decoration: none;
+                          font-size: 14px;
+                          font-weight: 100;
+                          display: inline-block;
+                        "
+                      >
+                        Discover more
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
           </table>
         </td>
       </tr>
@@ -340,7 +437,7 @@
       <!-- IGNITE 2025 SECTION IGNITE 2025 SECTION IGNITE 2025 SECTION-->
 
       <!-- DESKTOP SECTION -->
-      <tr class="ignite-column_desktop">
+      <!-- <tr class="ignite-column_desktop">
         <td class="ignite-column_desktop">
           <table
             class="ignite-column_desktop"
@@ -423,7 +520,6 @@
         </td>
       </tr>
 
-      <!-- DESKTOP LABEL + CTA SECTION -->
       <tr class="ignite-column_desktop">
         <td class="ignite-column_desktop">
           <table
@@ -491,7 +587,8 @@
             </tr>
           </table>
         </td>
-      </tr>
+      </tr> -->
+
       <tr>
         <td>
           <table
