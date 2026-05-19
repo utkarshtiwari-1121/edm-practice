@@ -1,66 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no, url=no"
+    />
     <title>Practice EDM</title>
-</head>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
 
-<style>
-    @media (max-width: 540px) {
-        
-    }
-</style>
+    <!--
+      SENDING TIP: Many email tools (Mailchimp, HubSpot, etc.) "inline CSS" and
+      DELETE @media rules. Disable CSS inlining / enable "embedded styles" in
+      your ESP, or media queries will never reach the inbox. Outlook desktop
+      never supports @media — it always shows the desktop version.
+    -->
+    <style type="text/css">
+      .ignite-column_mobile {
+        display: none !important;
+        mso-hide: all !important;
+        width: 0 !important;
+        height: 0 !important;
+        max-height: 0 !important;
+        overflow: hidden !important;
+        font-size: 0 !important;
+        line-height: 0 !important;
+        border: 0 !important;
+      }
 
-<body style="padding: 0; margin: 0; background-color: #000000; font-family: Arial, Helvetica, sans-serif;">
-    <table cellspacing="0" cellpadding="0" border="0" role="presentation"
-        style="max-width: 700px; width: 100%; background-color: #520000; margin: 0 auto; ">
-        <tr>
-            <td style="padding: 15px;">
-                <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/ad%20logo.png"
-                    alt="logo" style="width: 20%; display: block;">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/unnamed.gif"
-                    alt="gif" style="width: 100%; display: block;">
-            </td>
-        </tr>
+      @media only screen and (max-width: 600px),
+        only screen and (max-device-width: 600px) {
+        tr.ignite-column_desktop,
+        td.ignite-column_desktop,
+        table.ignite-column_desktop,
+        .ignite-column_desktop {
+          display: none !important;
+          mso-hide: all !important;
+          width: 0 !important;
+          height: 0 !important;
+          max-height: 0 !important;
+          overflow: hidden !important;
+          visibility: hidden !important;
+          font-size: 0 !important;
+          line-height: 0 !important;
+          border: 0 !important;
+          padding: 0 !important;
+          margin: 0 !important;
+        }
 
-        <tr>
-            <td
-                style="color: white; font-size: 14px; text-align: center; padding: 10px; font-weight: 100; line-height: 2;">
-                2025 was a year of significant milestones and remarkable progress for <span
-                    style="font-weight: bold;">Avery Dennison</span> India. From cutting-edge product launches to
-                immersive events and nationwide expansion, every step of innovation and collaboration has redefined
-                what’s possible.
-            </td>
-        </tr>
+        tr.ignite-column_mobile {
+          display: table-row !important;
+          width: auto !important;
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+          font-size: inherit !important;
+          line-height: inherit !important;
+        }
+        td.ignite-column_mobile {
+          display: table-cell !important;
+          width: auto !important;
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+          font-size: inherit !important;
+          line-height: inherit !important;
+        }
+        table.ignite-column_mobile {
+          display: table !important;
+          width: 100% !important;
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+          font-size: inherit !important;
+          line-height: inherit !important;
+        }
+      }
+    </style>
+  </head>
 
-        <tr>
-            <td style="color: white; font-size: 22px; text-align: center; padding: 15px 0; font-weight: 500;">
-                Unveiling Innovation
-            </td>
-        </tr>
 
-        <tr>
-            <td
-                style="color: white; font-size: 14px; text-align: center; padding: 10px; font-weight: 100; line-height: 2;">
-                From the advanced technology of our Supreme Ceramic IR Pro Series to the exceptional durability of
-                Supreme™ PPF Xtreme Matte, our innovations have set new benchmarks and redefined automotive excellence
-                across India.  
-            </td>
-        </tr>
+  <body
+    style="
+      padding: 0;
+      margin: 0;
+      background-color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+    "
+  >
+    <!-- Duplicate styles: Gmail / some ESPs keep body <style>, strip or weaken <head> -->
+    <style type="text/css">
+      .ignite-column_mobile {
+        display: none !important;
+        mso-hide: all !important;
+        width: 0 !important;
+        height: 0 !important;
+        max-height: 0 !important;
+        overflow: hidden !important;
+        font-size: 0 !important;
+        line-height: 0 !important;
+        border: 0 !important;
+      }
 
-        <tr>
-            <td>
-                <table cellspacing="0" cellpadding="0" border="0" role="presentation"
+      @media only screen and (max-width: 600px),
+        only screen and (max-device-width: 600px) {
+        tr.ignite-column_desktop,
+        td.ignite-column_desktop,
+        table.ignite-column_desktop,
+        .ignite-column_desktop {
+          display: none !important;
+          mso-hide: all !important;
+          width: 0 !important;
+          height: 0 !important;
+          max-height: 0 !important;
+          overflow: hidden !important;
+          visibility: hidden !important;
+          font-size: 0 !important;
+          line-height: 0 !important;
+          border: 0 !important;
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+
+        tr.ignite-column_mobile {
+          display: table-row !important;
+          width: auto !important;
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+          font-size: inherit !important;
+          line-height: inherit !important;
+        }
+        td.ignite-column_mobile {
+          display: table-cell !important;
+          width: auto !important;
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+          font-size: inherit !important;
+          line-height: inherit !important;
+        }
+        table.ignite-column_mobile {
+          display: table !important;
+          width: 100% !important;
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+          font-size: inherit !important;
+          line-height: inherit !important;
+        }
+      }
+    </style>
+
+    <table
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      role="presentation"
+      style="
+        max-width: 700px;
+        width: 100%;
+        background-color: #520000;
+        margin: 0 auto;
+      "
+    >
+      <tr>
+        <td style="padding: 15px">
+          <img
+            src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/ad%20logo.png"
+            alt="logo"
+            style="width: 20%; display: block"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/unnamed.gif"
+            alt="gif"
+            style="width: 100%; display: block"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td
+          style="
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+            font-weight: 100;
+            line-height: 2;
+          "
+        >
+          2025 was a year of significant milestones and remarkable progress for
+          <span style="font-weight: bold">Avery Dennison</span> India. From
+          cutting-edge product launches to immersive events and nationwide
+          expansion, every step of innovation and collaboration has redefined
+          what’s possible.
+        </td>
+      </tr>
+
+      <tr>
+        <td
+          style="
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            padding: 15px 0;
+            font-weight: 500;
+          "
+        >
+          Unveiling Innovation
+        </td>
+      </tr>
+
+      <tr>
+        <td
+          style="
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+            font-weight: 100;
+            line-height: 2;
+          "
+        >
+          From the advanced technology of our Supreme Ceramic IR Pro Series to
+          the exceptional durability of Supreme™ PPF Xtreme Matte, our
+          innovations have set new benchmarks and redefined automotive
+          excellence across India.  
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <!-- <table cellspacing="0" cellpadding="0" border="0" role="presentation"
                     style="max-width: 700px; width: 100%; background-color: #520000; margin: 0 auto;">
 
-                    <tr>
+                    <tr class="mobile_un">
                         <td width="50%" style="width:50%; padding:15px;">
                             <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/car%201%202.png"
                                 alt="car 1" width="100%" style="display:block; width:100%; max-width:100%;">
@@ -78,326 +258,1453 @@
                                 <tr>
                                     <td style="color: white; font-size: 14px; text-align: center; padding: 7px 12px; font-weight: 100; border: 1px solid rgba(255, 0, 0, 0.678);  margin: 0 auto;
                                         border-radius: 30px; box-shadow: inset 0px 0px 20px 6px #7e0101;">
-                                        Discover more
+                                         <button style="background-color: transparent; border: none; color: white; font-size: 14px; font-weight: 100; cursor: pointer;">Discover more</button>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
 
+                </table> -->
+
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            role="presentation"
+            align="center"
+            style="
+              max-width: 700px;
+              width: 100%;
+              background-color: #520000;
+              border-collapse: collapse;
+              border-spacing: 0;
+              margin: 0 auto;
+              padding: 0;
+            "
+          >
+            <tr align="center" class="image-column">
+              <td
+                width="50%"
+                class="mobile-image-padding"
+                style="width: 50%; padding: 15px; vertical-align: top"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/car%201%202.png"
+                  alt="car 1"
+                  width="320"
+                  class="mobile-full-image"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    border: 0;
+                  "
+                />
+              </td>
+              <td
+                width="50%"
+                class="mobile-image-padding"
+                style="width: 50%; padding: 15px; vertical-align: top"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/car%202.png"
+                  alt="car 2"
+                  width="320"
+                  class="mobile-full-image"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    border: 0;
+                  "
+                />
+              </td>
+            </tr>
+
+            <tr align="center">
+              <td
+                colspan="2"
+                align="center"
+                class="mobile-cta"
+                style="padding: 15px 0"
+              >
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                  align="center"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        color: #ffffff;
+                        font-size: 14px;
+                        text-align: center;
+                        padding: 7px 12px;
+                        font-weight: 100;
+                        border: 1px solid rgba(255, 0, 0, 0.678);
+                        border-radius: 30px;
+                        box-shadow: inset 0px 0px 20px 6px #7e0101;
+                      "
+                    >
+                      <a
+                        href="#"
+                        style="
+                          color: #ffffff;
+                          text-decoration: none;
+                          font-size: 14px;
+                          font-weight: 100;
+                          display: inline-block;
+                        "
+                      >
+                        Discover more
+                      </a>
+                    </td>
+                  </tr>
                 </table>
-            </td>
-        </tr>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
-        <tr>
-            <td>
-                <table cellspacing="0" cellpadding="0" border="0" role="presentation"
-                    style="width: 700px; background-color: #520000; margin: 0 auto;">
-                    <tr>
-                        <td width="233" style="width: 233px; padding: 20px 10px 20px 20px;">
-                            <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/ignite%202.png"
-                                alt="IGNITE" style="display: block; width: 100%; max-width: 100%;">
-                        </td>
+      <!-- IGNITE 2025 SECTION IGNITE 2025 SECTION IGNITE 2025 SECTION-->
 
-                        <td width="234" style="width: 234px; padding: 0; vertical-align: middle;">
-                            <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%"
-                                style="width: 100%;">
-                                <tr>
-                                    <td
-                                        style="width: 100%; color: white; font-size: 22px; text-align: center; padding: 0 10px 15px; font-weight: 500;">
-                                        Impactful Initiatives That Drive Change  </td>
-                                </tr>
-                                <tr>
-                                    <td
-                                        style="color: white; font-size: 14px; text-align: center; padding: 0 10px; font-weight: 100; line-height: 2;">
-                                        This year was all about driving our industry forward together, from the energy
-                                        of IGNITE
-                                        2025 to the momentum of Sustainable September and the launch of Greenspace.
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
+      <!-- DESKTOP SECTION -->
+      <!-- ========================================== -->
+      <!-- DESKTOP SECTION                            -->
+      <!-- ========================================== -->
+      <tr class="ignite-column_desktop">
+        <td class="ignite-column_desktop" style="padding: 0">
+          <table
+            class="ignite-column_desktop"
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            role="presentation"
+            style="
+              width: 100%;
+              max-width: 700px;
+              background-color: #520000;
+              margin: 0 auto;
+            "
+          >
+            <tr>
+              <td
+                width="233"
+                style="width: 233px; padding: 20px 10px 20px 20px"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/ignite%202.png"
+                  alt="IGNITE"
+                  style="display: block; width: 100%; max-width: 100%"
+                />
+              </td>
 
-                        <td width="233" style="width: 233px; padding: 20px 20px 20px 10px;">
-                            <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/green%20scape.png"
-                                alt="Greenspace" style="display: block; width: 100%; max-width: 100%;">
-                        </td>
-                    </tr>
+              <td
+                width="234"
+                style="width: 234px; padding: 0; vertical-align: middle"
+              >
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                  width="100%"
+                  style="width: 100%"
+                >
+                  <tr>
+                    <td
+                      style="
+                        width: 100%;
+                        color: white;
+                        font-size: 22px;
+                        text-align: center;
+                        padding: 0 10px 15px;
+                        font-weight: 500;
+                      "
+                    >
+                      Impactful Initiatives That Drive Change
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        color: white;
+                        font-size: 14px;
+                        text-align: center;
+                        padding: 0 10px;
+                        font-weight: 100;
+                        line-height: 2;
+                      "
+                    >
+                      This year was all about driving our industry forward
+                      together, from the energy of IGNITE 2025 to the momentum
+                      of Sustainable September and the launch of Greenspace.
+                    </td>
+                  </tr>
                 </table>
-            </td>
-        </tr>
+              </td>
 
-        <tr>
-            <td>
-                <table cellspacing="0" cellpadding="0" border="0" role="presentation"
-                    style="max-width: 700px; width: 100%; background-color: #520000; margin: 0 auto;">
+              <td
+                width="233"
+                style="width: 233px; padding: 20px 20px 20px 10px"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/green%20scape.png"
+                  alt="Greenspace"
+                  style="display: block; width: 100%; max-width: 100%"
+                />
+              </td>
+            </tr>
 
-                    <tr align="center">
-                        <td align="center" style="font-size: 14px ; color: white; padding: 0 0 0 20px;"> IGNITE 2025
-                        </td>
-                        <td>
-                            <table cellspacing="0" cellpadding="0" border="0" role="presentation" align="center">
-                                <tr align="center">
-                                    <td style="color: white; font-size: 14px; text-align: center; padding: 7px 12px; font-weight: 100; border: 1px solid rgba(255, 0, 0, 0.678);  margin: 0 auto;
-                            border-radius: 30px; box-shadow: inset 0px 0px 20px 6px #7e0101;">
-                                        Discover more
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td align="center" style="font-size: 14px ; color: white; padding: 0 20px 0 0;">Greenspace</td>
-                    </tr>
+            <!-- DESKTOP LABELS + CTA -->
+            <tr align="center">
+              <td
+                align="center"
+                style="font-size: 14px; color: white; padding: 0 0 20px 20px"
+              >
+                IGNITE 2025
+              </td>
+              <td style="padding: 0 0 20px 0">
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                  align="center"
+                >
+                  <tr>
+                    <td
+                      style="
+                        text-align: center;
+                        padding: 7px 12px;
+                        border: 1px solid rgba(255, 0, 0, 0.678);
+                        border-radius: 30px;
+                        box-shadow: inset 0px 0px 20px 6px #7e0101;
+                      "
+                    >
+                      <a
+                        href="#"
+                        style="
+                          color: white;
+                          font-size: 14px;
+                          font-weight: 100;
+                          text-decoration: none;
+                          display: inline-block;
+                        "
+                      >
+                        Discover more
+                      </a>
+                    </td>
+                  </tr>
                 </table>
-            </td>
-        </tr>
+              </td>
+              <td
+                align="center"
+                style="font-size: 14px; color: white; padding: 0 20px 20px 0"
+              >
+                Greenspace
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
-        <tr>
-            <td>
-                <table cellspacing="0" cellpadding="0" border="0" role="presentation"
-                    style="max-width: 700px; width: 100%; background-color: #520000; margin: 0 auto;">
+      <!-- ========================================== -->
+      <!-- MOBILE SECTION                             -->
+      <!-- ========================================== -->
+      <!-- Mobile: inline display:none is the default; @media !important overrides it on phones -->
+      <tr
+        class="ignite-column_mobile"
+        style="
+          display: none;
+          max-height: 0;
+          overflow: hidden;
+          mso-hide: all;
+          font-size: 0;
+          line-height: 0;
+        "
+      >
+        <td
+          class="ignite-column_mobile"
+          style="
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            mso-hide: all;
+            padding: 0;
+            font-size: 0;
+            line-height: 0;
+          "
+        >
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            role="presentation"
+            class="ignite-column_mobile"
+            style="
+              display: none;
+              width: 100%;
+              max-width: 700px;
+              background-color: #520000;
+              margin: 0 auto;
+              border-collapse: collapse;
+              max-height: 0;
+              overflow: hidden;
+              mso-hide: all;
+              font-size: 0;
+              line-height: 0;
+            "
+          >
+            <tr>
+              <!-- LEFT IMAGE -->
+              <td
+                width="50%"
+                valign="top"
+                style="width: 50%; padding: 20px 10px 20px 20px"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/ignite%202.png"
+                  alt="IGNITE"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    border: 0;
+                  "
+                />
+              </td>
+              <!-- RIGHT IMAGE -->
+              <td
+                width="50%"
+                valign="top"
+                style="width: 50%; padding: 20px 20px 20px 10px"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/green%20scape.png"
+                  alt="Greenspace"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    border: 0;
+                  "
+                />
+              </td>
+            </tr>
 
-                    <tr align="center">
-                        <td style="font-size: 22px ; color: white; padding-top: 50px;">Expanding Our Footprint</td>
-                    </tr>
-                    <tr align="center">
-                        <td style="font-size: 14px ; color: white; padding-top: 15px; line-height: 2;">As we expand
-                            across
-                            India, new partner studios enhance support, improve accessibility, and
-                            strengthen our installer network, bringing Avery Dennison closer to every market we serve.
-                        </td>
-                    </tr>
+            <tr>
+              <td
+                align="center"
+                style="
+                  font-size: 14px;
+                  color: #ffffff;
+                  padding: 0 10px 20px 20px;
+                "
+              >
+                IGNITE 2025
+              </td>
+              <td
+                align="center"
+                style="
+                  font-size: 14px;
+                  color: #ffffff;
+                  padding: 0 20px 20px 10px;
+                "
+              >
+                Greenspace
+              </td>
+            </tr>
 
+            <tr>
+              <td
+                colspan="2"
+                align="center"
+                style="
+                  color: #ffffff;
+                  font-size: 22px;
+                  text-align: center;
+                  padding: 0 30px 15px 30px;
+                  font-weight: 500;
+                  line-height: 1.3;
+                "
+              >
+                Impactful Initiatives That Drive Change
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                colspan="2"
+                align="center"
+                style="
+                  color: #ffffff;
+                  font-size: 14px;
+                  text-align: center;
+                  padding: 0 10px 25px 10px;
+                  font-weight: 100;
+                  line-height: 2;
+                "
+              >
+                This year was all about driving our industry forward together,
+                from the energy of IGNITE 2025 to the momentum of Sustainable
+                September and the launch of Greenspace.
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2" align="center" style="padding: 0 0 25px 0">
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                  align="center"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        text-align: center;
+                        padding: 7px 12px;
+                        border: 1px solid rgba(255, 0, 0, 0.678);
+                        border-radius: 30px;
+                        box-shadow: inset 0px 0px 20px 6px #7e0101;
+                      "
+                    >
+                      <a
+                        href="#"
+                        style="
+                          color: #ffffff;
+                          font-size: 14px;
+                          font-weight: 100;
+                          text-decoration: none;
+                          display: inline-block;
+                        "
+                      >
+                        Discover more
+                      </a>
+                    </td>
+                  </tr>
                 </table>
-            </td>
-        </tr>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            role="presentation"
+            style="
+              max-width: 700px;
+              width: 100%;
+              background-color: #520000;
+              margin: 0 auto;
+            "
+          >
+            <tr align="center">
+              <td
+                class="expanding-text"
+                style="font-size: 22px; color: white; padding-top: 10px"
+              >
+                Expanding Our Footprint
+              </td>
+            </tr>
+            <tr align="center">
+              <td
+                style="
+                  font-size: 14px;
+                  color: white;
+                  padding-top: 15px;
+                  line-height: 2;
+                "
+              >
+                As we expand across India, new partner studios enhance support,
+                improve accessibility, and strengthen our installer network,
+                bringing Avery Dennison closer to every market we serve.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
-        <tr>
-            <td style="padding-top: 15px;">
-                <table cellspacing="0" cellpadding="0" border="0" role="presentation"
-                    style="max-width: 700px; width: 100%; background-color: #520000; margin: 0 auto;">
+      <!-- <tr>
+        <td style="padding-top: 15px">
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            role="presentation"
+            style="
+              max-width: 700px;
+              width: 100%;
+              background-color: #520000;
+              margin: 0 auto;
+            "
+          >
+            <tr>
+              <td style="padding: 0 15px 0 30px">
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/wrap%20nation.png"
+                        alt="corsa studio"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: 13rem;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
 
-                    <tr>
-                        <td style="padding: 0 15px 0 30px;">
-                            <table cellspacing="0" cellpadding="0" border="0" role="presentation">
-                                <tr>
-                                    <td>
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/wrap%20nation.png
-                                        " alt="corsa studio" width="100%" style="display:block; width:100%; max-width:100%; height: 13rem;
- border-radius: 10px;">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td align="center" style="padding-top: 10px;">
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
-                                        " alt="location" width="100%"
-                                            style="display:block; width:20px; max-width:100%; color: white; ">
-                                        <span
-                                            style="font-size: 14px; font-weight: 100; color: white; display: inline;">Kerala
-                                            Corsa Studio</span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-
-
-                        <td style="padding: 0 15px ;">
-                            <table cellspacing="0" cellpadding="0" border="0" role="presentation">
-                                <tr>
-                                    <td>
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png
-                                        " alt="corsa studio" width="100%" style="display:block; width:100%; max-width:100%; height: 13rem;
- border-radius: 10px;">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td align="center" style="padding-top: 10px;">
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
-                                        " alt="location" width="100%"
-                                            style="display:block; width:20px; max-width:100%; color: white;">
-                                        <span
-                                            style="font-size: 14px; font-weight: 100; color: white; display: inline;">Kerala
-                                            Corsa Studio</span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-
-
-                        <td style="padding: 0 15px;">
-                            <table cellspacing="0" cellpadding="0" border="0" role="presentation">
-                                <tr>
-                                    <td align="center" style="padding-top: 10px;">
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png"
-                                            alt="corsa studio" width="100%" style="display:block; width:100%; max-width:100%; height: 13rem;
- border-radius: 10px;">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td align="center" style="padding-top: 10px;">
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
-                                        " alt="location" width="100%"
-                                            style="display:block; width:20px; max-width:100%; color: white;">
-                                        <span
-                                            style="font-size: 14px; font-weight: 100; color: white; display: inline;">Kerala
-                                            Corsa Studio</span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-
-
-
-                        <td style="padding: 0px 30px 0 15px;">
-                            <table cellspacing="0" cellpadding="0" border="0" role="presentation">
-                                <tr>
-                                    <td>
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/auto%20care.png
-                                        " alt="corsa studio" width="100%" style="display:block; width:100%; max-width:100%; height: 13rem;
- border-radius: 10px;">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td align="center" style="padding-top: 10px;">
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
-                                        " alt="location" width="100%"
-                                            style="display:block; width:20px; max-width:100%; color: white;">
-                                        <span
-                                            style="font-size: 14px; font-weight: 100; color: white; display: inline;">Kerala
-                                            Corsa Studio</span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-
-
-
-
-
-
-
-
-
-                    </tr>
-
-
-                    <tr>
-
-
-                        <td style="padding: 0 15px 0 30px;">
-                            <table cellspacing="0" cellpadding="0" border="0" role="presentation">
-                                <tr>
-                                    <td>
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/auto%20care.png
-                                        " alt="corsa studio" width="100%" style="display:block; width:100%; max-width:100%; height: 13rem;
- border-radius: 10px;">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td align="center" style="padding-top: 10px;">
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
-                                        " alt="location" width="100%"
-                                            style="display:block; width:20px; max-width:100%; color: white;">
-                                        <span
-                                            style="font-size: 14px; font-weight: 100; color: white; display: inline;">Kerala
-                                            Corsa Studio</span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-
-
-
-                        <td style="padding:     25px 15px ;">
-                            <table cellspacing="0" cellpadding="0" border="0" role="presentation">
-                                <tr>
-                                    <td>
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png
-
-                                        " alt="corsa studio" width="100%" style="display:block; width:100%; max-width:100%; height: 13rem;
- border-radius: 10px;">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td align="center" style="padding-top: 10px;">
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
-                                        " alt="location" width="100%"
-                                            style="display:block; width:20px; max-width:100%; color: white;">
-                                        <span
-                                            style="font-size: 14px; font-weight: 100; color: white; display: inline;">Kerala
-                                            Corsa Studio</span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-
-
-
-                        <td style="padding: 25px 15px ;">
-                            <table cellspacing="0" cellpadding="0" border="0" role="presentation">
-                                <tr>
-                                    <td>
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/wrap%20nation.png
-" alt="corsa studio" width="100%" style="display:block; width:100%; max-width:100%; height: 13rem;
- border-radius: 10px;">
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td align="center" style="padding-top: 10px;">
-                                        <img src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
-                                        " alt="location" width="100%"
-                                            style="display:block; width:20px; max-width:100%; color: white;">
-                                        <span
-                                            style="font-size: 14px; font-weight: 100; color: white; display: inline;">Kerala
-                                            Corsa Studio</span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-
-
-
-
-                        <td style="padding: 0px 15px ">
-                            <table align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
-                                <tr>
-                                    <td style="color: white; font-size: 14px; text-align: center; padding: 7px 12px; font-weight: 100; border: 1px solid rgba(255, 0, 0, 0.678);  margin: 0 auto;
-                                        border-radius: 30px; box-shadow: inset 0px 0px 20px 6px #7e0101;">
-                                        Discover more
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
+                                        "
+                        alt="location"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 20px;
+                          max-width: 100%;
+                          color: white;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline;
+                        "
+                        >Kerala Corsa Studio</span
+                      >
+                    </td>
+                  </tr>
                 </table>
-            </td>
-        </tr>
+              </td>
 
-        <tr>
-            <td>
+              <td style="padding: 0 15px">
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png
+                                        "
+                        alt="corsa studio"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: 13rem;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
 
-                <table cellspacing="0" cellpadding="0" border="0" role="presentation"
-                    style="max-width: 700px; width: 100%; background-color: #520000; margin: 0 auto;">
-                    <tr align="center">
-                        <td
-                            style="color: white; font-size: 22px; text-align: center; padding: 10px 48px 25px 48px; font-weight: 500;">
-                            Thank you for your partnership in a year defined by innovation and progress. Onward to 2026!
-                        </td>
-                    </tr>
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
+                                        "
+                        alt="location"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 20px;
+                          max-width: 100%;
+                          color: white;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline;
+                        "
+                        >Kerala Corsa Studio</span
+                      >
+                    </td>
+                  </tr>
                 </table>
+              </td>
 
+              <td style="padding: 0 15px">
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png"
+                        alt="corsa studio"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: 13rem;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
 
-            </td>
-        </tr>
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
+                                        "
+                        alt="location"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 20px;
+                          max-width: 100%;
+                          color: white;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline;
+                        "
+                        >Kerala Corsa Studio</span
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </td>
 
+              <td style="padding: 0px 30px 0 15px">
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/auto%20care.png
+                                        "
+                        alt="corsa studio"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: 13rem;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
+                                        "
+                        alt="location"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 20px;
+                          max-width: 100%;
+                          color: white;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline;
+                        "
+                        >Kerala Corsa Studio</span
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 0 15px 0 30px">
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/auto%20care.png
+                                        "
+                        alt="corsa studio"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: 13rem;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
+                                        "
+                        alt="location"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 20px;
+                          max-width: 100%;
+                          color: white;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline;
+                        "
+                        >Kerala Corsa Studio</span
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <td style="padding: 25px 15px">
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png
+
+                                        "
+                        alt="corsa studio"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: 13rem;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
+                                        "
+                        alt="location"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 20px;
+                          max-width: 100%;
+                          color: white;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline;
+                        "
+                        >Kerala Corsa Studio</span
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <td style="padding: 25px 15px">
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/wrap%20nation.png
+"
+                        alt="corsa studio"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: 13rem;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png
+                                        "
+                        alt="location"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 20px;
+                          max-width: 100%;
+                          color: white;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline;
+                        "
+                        >Kerala Corsa Studio</span
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <td style="padding: 0px 15px">
+                <table
+                  align="center"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <tr>
+                    <td
+                      style="
+                        color: white;
+                        font-size: 14px;
+                        text-align: center;
+                        padding: 7px 12px;
+                        font-weight: 100;
+                        border: 1px solid rgba(255, 0, 0, 0.678);
+                        margin: 0 auto;
+                        border-radius: 30px;
+                        box-shadow: inset 0px 0px 20px 6px #7e0101;
+                      "
+                    >
+                      <button
+                        style="
+                          background-color: transparent;
+                          border: none;
+                          color: white;
+                          font-size: 14px;
+                          font-weight: 100;
+                          cursor: pointer;
+                        "
+                      >
+                        Discover more
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr> -->
+
+      <tr>
+        <td style="padding-top: 15px">
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            role="presentation"
+            style="
+              max-width: 700px;
+              width: 100%;
+              background-color: #520000;
+              margin: 0 auto;
+              /* display: none; */
+            "
+          >
+            <tr>
+              <!-- COLUMN 1 -->
+              <td
+                width="50%"
+                valign="top"
+                style="width: 50%; padding: 0 15px 25px 30px"
+              >
+                <table
+                  width="100%"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <!-- IMAGE -->
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/wrap%20nation.png"
+                        alt="Wrap Nation"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: auto;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- LOCATION -->
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
+                        alt="location"
+                        width="20"
+                        style="
+                          display: inline-block;
+                          width: 20px;
+                          vertical-align: middle;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline-block;
+                          vertical-align: middle;
+                          padding-left: 5px;
+                        "
+                      >
+                        Kerala Corsa Studio
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <!-- COLUMN 2 -->
+              <td
+                width="50%"
+                valign="top"
+                style="width: 50%; padding: 0 30px 25px 15px"
+              >
+                <table
+                  width="100%"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <!-- IMAGE -->
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png"
+                        alt="Indo Radial Club"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: auto;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- LOCATION -->
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
+                        alt="location"
+                        width="20"
+                        style="
+                          display: inline-block;
+                          width: 20px;
+                          vertical-align: middle;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline-block;
+                          vertical-align: middle;
+                          padding-left: 5px;
+                        "
+                      >
+                        Kerala Corsa Studio
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <!-- COLUMN 1 -->
+              <td
+                width="50%"
+                valign="top"
+                style="width: 50%; padding: 0 15px 25px 30px"
+              >
+                <table
+                  width="100%"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <!-- IMAGE -->
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png"
+                        alt="Indo Radial Club"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: auto;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- LOCATION -->
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
+                        alt="location"
+                        width="20"
+                        style="
+                          display: inline-block;
+                          width: 20px;
+                          vertical-align: middle;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline-block;
+                          vertical-align: middle;
+                          padding-left: 5px;
+                        "
+                      >
+                        Kerala Corsa Studio
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <!-- COLUMN 2 -->
+              <td
+                width="50%"
+                valign="top"
+                style="width: 50%; padding: 0 30px 25px 15px"
+              >
+                <table
+                  width="100%"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <!-- IMAGE -->
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/auto%20care.png"
+                        alt="Auto Care"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: auto;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- LOCATION -->
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
+                        alt="location"
+                        width="20"
+                        style="
+                          display: inline-block;
+                          width: 20px;
+                          vertical-align: middle;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline-block;
+                          vertical-align: middle;
+                          padding-left: 5px;
+                        "
+                      >
+                        Kerala Corsa Studio
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ===================================================== -->
+            <!-- ROW 3 : IMAGE 5 + IMAGE 6 (2 TD ONLY)                  -->
+            <!-- ===================================================== -->
+            <tr>
+              <!-- COLUMN 1 -->
+              <td
+                width="50%"
+                valign="top"
+                style="width: 50%; padding: 0 15px 25px 30px"
+              >
+                <table
+                  width="100%"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <!-- IMAGE -->
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/auto%20care.png"
+                        alt="Auto Care"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: auto;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- LOCATION -->
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
+                        alt="location"
+                        width="20"
+                        style="
+                          display: inline-block;
+                          width: 20px;
+                          vertical-align: middle;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline-block;
+                          vertical-align: middle;
+                          padding-left: 5px;
+                        "
+                      >
+                        Kerala Corsa Studio
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <!-- COLUMN 2 -->
+              <td
+                width="50%"
+                valign="top"
+                style="width: 50%; padding: 0 30px 25px 15px"
+              >
+                <table
+                  width="100%"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <!-- IMAGE -->
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png"
+                        alt="Indo Radial Club"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: auto;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- LOCATION -->
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
+                        alt="location"
+                        width="20"
+                        style="
+                          display: inline-block;
+                          width: 20px;
+                          vertical-align: middle;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline-block;
+                          vertical-align: middle;
+                          padding-left: 5px;
+                        "
+                      >
+                        Kerala Corsa Studio
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ===================================================== -->
+            <!-- ROW 4 : IMAGE 7 + CTA BUTTON (2 TD ONLY)               -->
+            <!-- ===================================================== -->
+            <tr>
+              <!-- COLUMN 1 -->
+              <td
+                width="50%"
+                valign="top"
+                style="width: 50%; padding: 0 15px 0 30px"
+              >
+                <table
+                  width="100%"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                >
+                  <!-- IMAGE -->
+                  <tr>
+                    <td>
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/wrap%20nation.png"
+                        alt="Wrap Nation"
+                        width="100%"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 100%;
+                          height: auto;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+
+                  <!-- LOCATION -->
+                  <tr>
+                    <td align="center" style="padding-top: 10px">
+                      <img
+                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
+                        alt="location"
+                        width="20"
+                        style="
+                          display: inline-block;
+                          width: 20px;
+                          vertical-align: middle;
+                        "
+                      />
+                      <span
+                        style="
+                          font-size: 14px;
+                          font-weight: 100;
+                          color: white;
+                          display: inline-block;
+                          vertical-align: middle;
+                          padding-left: 5px;
+                        "
+                      >
+                        Kerala Corsa Studio
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <!-- COLUMN 2 : CTA BUTTON -->
+              <td
+                width="50%"
+                valign="middle"
+                align="center"
+                style="width: 50%; padding: 0 30px 0 15px"
+              >
+                <table
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  role="presentation"
+                  align="center"
+                >
+                  <tr>
+                    <td
+                      style="
+                        color: white;
+                        font-size: 14px;
+                        text-align: center;
+                        padding: 7px 12px;
+                        font-weight: 100;
+                        border: 1px solid rgba(255, 0, 0, 0.678);
+                        border-radius: 30px;
+                        box-shadow: inset 0px 0px 20px 6px #7e0101;
+                      "
+                    >
+                      <button
+                        style="
+                          background-color: transparent;
+                          border: none;
+                          color: white;
+                          font-size: 14px;
+                          font-weight: 100;
+                          cursor: pointer;
+                        "
+                      >
+                        Discover more
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            role="presentation"
+            style="
+              max-width: 700px;
+              width: 100%;
+              background-color: #520000;
+              margin: 0 auto;
+            "
+          >
+            <tr align="center">
+              <td
+                style="
+                  color: white;
+                  font-size: 22px;
+                  text-align: center;
+                  padding: 25px 48px 25px 48px;
+                  font-weight: 500;
+                "
+              >
+                Thank you for your partnership in a year defined by innovation
+                and progress. Onward to 2026!
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
     </table>
-
-</body>
-
+  </body>
 </html>
