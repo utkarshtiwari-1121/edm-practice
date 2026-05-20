@@ -1,1107 +1,516 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="format-detection"
-      content="telephone=no, date=no, address=no, email=no, url=no"
-    />
-    <title>Practice EDM</title>
-    <style>
-      /* RESET & GLOBAL STYLES - FIXED: Moved inside <head> */
-      .ignite-column_mobile {
-        display: none !important;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body style="background-color: rgb(117, 106, 92);">
+
+  <style>
+    .desktop_hide,
+    .desktop_hide table {
+      mso-hide: all;
+      display: none;
+      max-height: 0;
+      overflow: hidden
+    }
+
+    .mobile_hide,
+    .mobile_hide table {
+      display: table !important;
+      max-height: none !important
+    }
+
+    @media (max-width:720px) {
+
+      .mobile_hide,
+      .mobile_hide table {
+        mso-hide: all;
+        display: none;
+        max-height: 0;
+        overflow: hidden
       }
 
-      .expanding-text {
-        padding-top: 50px !important;
+      .desktop_hide,
+      .desktop_hide table {
+        display: table !important;
+        max-height: none !important
       }
+    }
+  </style>
 
-      /* MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
-      @media only screen and (max-width: 540px) {
-        .image-column,
-        .image-column td {
-          display: block !important;
-          width: 97% !important;
-          max-width: 100% !important;
-          padding: 10px 0px !important;
-          margin: 0 auto !important;
-        }
-
-        .ignite-column_mobile {
-          display: block !important;
-          /* width: 97% !important;   (cleaner without commented clutter) */
-          /* max-width: 100% !important; */
-          /* padding: 10px 0px !important; */
-          /* margin: 0 auto !important; */
-        }
-
-        .expanding-text {
-          padding-top: 10px !important;
-        }
-
-        .ignite-column_desktop {
-          display: none !important;
-        }
-
-        /* Additional mobile image flexibility */
-        .mobile-full-image {
-          width: 100% !important;
-          height: auto !important;
-        }
-        .mobile-image-padding {
-          padding: 10px 8px !important;
-        }
-        .mobile-cta {
-          padding: 10px 0 20px !important;
-        }
-      }
-
-      /* Email client safe defaults */
-      table {
-        border-collapse: collapse;
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
-      }
-      img {
-        border: 0;
-        height: auto;
-        line-height: 100%;
-        outline: none;
-        text-decoration: none;
-        -ms-interpolation-mode: bicubic;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #000000;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      /* Button hover (optional but safe) */
-      .btn-link {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 100;
-        display: inline-block;
-      }
-    </style>
-  </head>
-  <body
-    style="
-      margin: 0;
-      padding: 0;
-      background-color: #000000;
-      font-family: Arial, Helvetica, sans-serif;
-    "
-  >
-    <!-- MAIN CONTAINER TABLE: max-width 700px, centered -->
-    <table
-      cellspacing="0"
-      cellpadding="0"
-      border="0"
-      role="presentation"
-      align="center"
-      style="
-        max-width: 700px;
-        width: 100%;
-        background-color: #520000;
-        margin: 0 auto;
-        border-collapse: collapse;
-      "
-    >
-      <!-- LOGO ROW -->
-      <tr>
-        <td style="padding: 15px">
-          <img
-            src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/ad%20logo.png"
-            alt="logo"
-            style="width: 20%; display: block"
-          />
-        </td>
-      </tr>
-
-      <!-- HERO GIF -->
+  <table class="row row-13" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+    style="mso-table-lspace:0;mso-table-rspace:0;background-size:auto; border-collapse: collapse; border-spacing: 0;">
+    <tbody>
       <tr>
         <td>
-          <img
-            src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/unnamed.gif"
-            alt="gif"
-            style="width: 100%; display: block"
-          />
-        </td>
-      </tr>
+          <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+            style="mso-table-lspace:0;mso-table-rspace:0;background-size:auto;color:#000;border-radius:0;padding-left:30px;padding-right:30px;background-color:#000;width:700px;margin:0 auto;/* border-collapse: collapse; */border-spacing: 0;"
+            width="700" bgcolor="#000">
+            <tbody>
+              <tr>
+                <td>
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                    style="mso-table-lspace:0;mso-table-rspace:0;  border-spacing: 0; border-collapse: unset; padding-bottom: 20px;">
+                    <tbody>
+                      <tr>
+                        <td class="column column-1" width="50%"
+                          style="mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left;border-bottom:1px solid #fff;border-left:1px solid #fff;border-right:1px solid #fff;border-top:1px solid #fff;padding-bottom:20px;padding-left:30px;padding-right:30px;padding-top:20px;vertical-align:top;border-radius:8px;">
+                          <a href="https://graphics.averydennison.com/ap-en/home/resource-center/training-and-certification/supreme-wrapping-film-training.html"
+                            style="all:unset;text-decoration: none; color: inherit; cursor: pointer;">
+                            <table class="paragraph_block block-3" width="100%" border="0" cellpadding="0"
+                              cellspacing="0" role="presentation"
+                              style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0;">
+                              <tbody>
+                                <tr>
+                                  <td class="pad">
+                                    <div
+                                      style="color:#fff;direction:ltr;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;font-weight:600;letter-spacing:0;line-height:1.2;text-align:left;mso-line-height-alt:24px">
+                                      <p style="margin:0">Supreme Wrapping Film™ Training</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </a>
 
-      <!-- INTRO TEXT -->
-      <tr>
-        <td
-          style="
-            color: white;
-            font-size: 14px;
-            text-align: center;
-            padding: 10px;
-            font-weight: 100;
-            line-height: 2;
-          "
-        >
-          2025 was a year of significant milestones and remarkable progress for
-          <span style="font-weight: bold">Avery Dennison</span> India. From
-          cutting-edge product launches to immersive events and nationwide
-          expansion, every step of innovation and collaboration has redefined
-          what’s possible.
-        </td>
-      </tr>
+                        </td>
+                        <td class="column gap"
+                          style="vertical-align:top;mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;width:20px;height:20px; border-collapse: collapse; border-spacing: 0;"
+                            width="20" height="20"></table>
+                        </td>
+                        <td class="column column-1" width="50%"
+                          style="mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left;border-bottom:1px solid #fff;border-left:1px solid #fff;border-right:1px solid #fff;border-top:1px solid #fff;padding-bottom:20px;padding-left:30px;padding-right:30px;padding-top:20px;vertical-align:top;border-radius:8px;">
+                          <a href="https://graphics.averydennison.com/ap-en/home/resource-center/training-and-certification/automotive-window-film-training.html"
+                            style="all:unset;text-decoration: none; color: inherit; cursor: pointer;">
+                            <table class="paragraph_block block-3" width="100%" border="0" cellpadding="0"
+                              cellspacing="0" role="presentation"
+                              style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0;">
+                              <tbody>
+                                <tr>
+                                  <td class="pad">
+                                    <div
+                                      style="color:#fff;direction:ltr;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;font-weight:600;letter-spacing:0;line-height:1.2;text-align:left;mso-line-height-alt:24px">
+                                      <p style="margin:0">
+                                        Automotive Window Film training</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </a>
 
-      <!-- UNVEILING INNOVATION TITLE -->
-      <tr>
-        <td
-          style="
-            color: white;
-            font-size: 22px;
-            text-align: center;
-            padding: 15px 0;
-            font-weight: 500;
-          "
-        >
-          Unveiling Innovation
-        </td>
-      </tr>
-
-      <!-- SUBTEXT -->
-      <tr>
-        <td
-          style="
-            color: white;
-            font-size: 14px;
-            text-align: center;
-            padding: 10px;
-            font-weight: 100;
-            line-height: 2;
-          "
-        >
-          From the advanced technology of our Supreme Ceramic IR Pro Series to
-          the exceptional durability of Supreme™ PPF Xtreme Matte, our
-          innovations have set new benchmarks and redefined automotive
-          excellence across India.
-        </td>
-      </tr>
-
-      <!-- TWO COLUMN CARS + BUTTON (STRUCTURED PROPERLY) -->
-      <tr>
-        <td style="padding: 0">
-          <table
-            cellspacing="0"
-            cellpadding="0"
-            border="0"
-            role="presentation"
-            align="center"
-            style="
-              width: 100%;
-              background-color: #520000;
-              border-collapse: collapse;
-              margin: 0 auto;
-            "
-          >
-            <tr align="center" class="image-column">
-              <td
-                width="50%"
-                class="mobile-image-padding"
-                style="width: 50%; padding: 15px; vertical-align: top"
-              >
-                <img
-                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/car%201%202.png"
-                  alt="car 1"
-                  width="320"
-                  class="mobile-full-image"
-                  style="
-                    display: block;
-                    width: 100%;
-                    max-width: 100%;
-                    height: auto;
-                    border: 0;
-                  "
-                />
-              </td>
-              <td
-                width="50%"
-                class="mobile-image-padding"
-                style="width: 50%; padding: 15px; vertical-align: top"
-              >
-                <img
-                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/car%202.png"
-                  alt="car 2"
-                  width="320"
-                  class="mobile-full-image"
-                  style="
-                    display: block;
-                    width: 100%;
-                    max-width: 100%;
-                    height: auto;
-                    border: 0;
-                  "
-                />
-              </td>
-            </tr>
-            <tr align="center">
-              <td
-                colspan="2"
-                align="center"
-                class="mobile-cta"
-                style="padding: 15px 0 25px"
-              >
-                <table
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                  align="center"
-                >
-                  <tr>
-                    <td
-                      align="center"
-                      style="
-                        color: #ffffff;
-                        font-size: 14px;
-                        text-align: center;
-                        padding: 7px 12px;
-                        font-weight: 100;
-                        border: 1px solid rgba(255, 0, 0, 0.678);
-                        border-radius: 30px;
-                        box-shadow: inset 0px 0px 20px 6px #7e0101;
-                      "
-                    >
-                      <a
-                        href="#"
-                        class="btn-link"
-                        style="
-                          color: #ffffff;
-                          text-decoration: none;
-                          font-size: 14px;
-                          font-weight: 100;
-                          display: inline-block;
-                        "
-                      >
-                        Discover more
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </td>
       </tr>
-
-      <!-- ==================== IGNITE 2025 SECTION (DESKTOP) ==================== -->
-      <tr class="ignite-column_desktop">
-        <td style="padding: 0">
-          <table
-            cellspacing="0"
-            cellpadding="0"
-            border="0"
-            role="presentation"
-            style="width: 100%; background-color: #520000; margin: 0 auto"
-          >
-            <tr>
-              <td width="33%" style="width: 33%; padding: 20px 10px 20px 20px">
-                <img
-                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/ignite%202.png"
-                  alt="IGNITE"
-                  style="width: 100%; max-width: 100%; display: block"
-                />
-              </td>
-              <td
-                width="34%"
-                style="width: 34%; padding: 0; vertical-align: middle"
-              >
-                <table
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                  width="100%"
-                >
-                  <tr>
-                    <td
-                      style="
-                        color: white;
-                        font-size: 22px;
-                        text-align: center;
-                        padding: 0 10px 15px;
-                        font-weight: 500;
-                      "
-                    >
-                      Impactful Initiatives That Drive Change
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      style="
-                        color: white;
-                        font-size: 14px;
-                        text-align: center;
-                        padding: 0 10px;
-                        font-weight: 100;
-                        line-height: 2;
-                      "
-                    >
-                      This year was all about driving our industry forward
-                      together, from the energy of IGNITE 2025 to the momentum
-                      of Sustainable September and the launch of Greenspace.
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td width="33%" style="width: 33%; padding: 20px 20px 20px 10px">
-                <img
-                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/green%20scape.png"
-                  alt="Greenspace"
-                  style="width: 100%; max-width: 100%; display: block"
-                />
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <!-- DESKTOP LABEL + BUTTON ROW (IGNITE | GREENSPACE) fixed table structure -->
-      <tr class="ignite-column_desktop">
-        <td style="padding: 0 0 20px 0">
-          <table
-            cellspacing="0"
-            cellpadding="0"
-            border="0"
-            role="presentation"
-            style="width: 100%; background-color: #520000"
-          >
-            <tr align="center">
-              <td
-                align="center"
-                style="
-                  font-size: 14px;
-                  color: white;
-                  padding: 0 0 0 20px;
-                  width: 33%;
-                "
-              >
-                IGNITE 2025
-              </td>
-              <td align="center" style="width: 34%">
-                <table
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                  align="center"
-                >
-                  <tr>
-                    <td
-                      style="
-                        color: white;
-                        font-size: 14px;
-                        text-align: center;
-                        padding: 7px 12px;
-                        font-weight: 100;
-                        border: 1px solid rgba(255, 0, 0, 0.678);
-                        border-radius: 30px;
-                        box-shadow: inset 0px 0px 20px 6px #7e0101;
-                      "
-                    >
-                      <a
-                        href="#"
-                        class="btn-link"
-                        style="color: #ffffff; text-decoration: none"
-                        >Discover more</a
-                      >
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td
-                align="center"
-                style="
-                  font-size: 14px;
-                  color: white;
-                  padding: 0 20px 0 0;
-                  width: 33%;
-                "
-              >
-                Greenspace
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <!-- ==================== IGNITE MOBILE VERSION (hidden on desktop) ==================== -->
-      <tr class="ignite-column_mobile">
-        <td style="padding: 0">
-          <table
-            cellspacing="0"
-            cellpadding="0"
-            border="0"
-            role="presentation"
-            width="100%"
-            style="
-              width: 100%;
-              background-color: #520000;
-              margin: 0 auto;
-              border-collapse: collapse;
-            "
-          >
-            <tr>
-              <!-- LEFT IMAGE -->
-              <td
-                width="50%"
-                valign="top"
-                style="width: 50%; padding: 20px 10px 10px 20px"
-              >
-                <img
-                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/ignite%202.png"
-                  alt="IGNITE"
-                  style="
-                    display: block;
-                    width: 100%;
-                    max-width: 100%;
-                    height: auto;
-                    border: 0;
-                  "
-                />
-              </td>
-              <!-- RIGHT IMAGE -->
-              <td
-                width="50%"
-                valign="top"
-                style="width: 50%; padding: 20px 20px 10px 10px"
-              >
-                <img
-                  src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/green%20scape.png"
-                  alt="Greenspace"
-                  style="width: 100%; max-width: 100%; height: auto; border: 0"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td
-                align="center"
-                style="
-                  font-size: 14px;
-                  color: #ffffff;
-                  padding: 0 10px 10px 20px;
-                "
-              >
-                IGNITE 2025
-              </td>
-              <td
-                align="center"
-                style="
-                  font-size: 14px;
-                  color: #ffffff;
-                  padding: 0 20px 10px 10px;
-                "
-              >
-                Greenspace
-              </td>
-            </tr>
-            <tr>
-              <td
-                colspan="2"
-                align="center"
-                style="
-                  color: #ffffff;
-                  font-size: 22px;
-                  padding: 0 30px 15px;
-                  font-weight: 500;
-                  line-height: 1.3;
-                "
-              >
-                Impactful Initiatives That Drive Change
-              </td>
-            </tr>
-            <tr>
-              <td
-                colspan="2"
-                align="center"
-                style="
-                  color: #ffffff;
-                  font-size: 14px;
-                  padding: 0 15px 25px;
-                  font-weight: 100;
-                  line-height: 2;
-                "
-              >
-                This year was all about driving our industry forward together,
-                from the energy of IGNITE 2025 to the momentum of Sustainable
-                September and the launch of Greenspace.
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" align="center" style="padding: 0 0 25px 0">
-                <table
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                  align="center"
-                >
-                  <tr>
-                    <td
-                      align="center"
-                      style="
-                        color: #ffffff;
-                        font-size: 14px;
-                        text-align: center;
-                        padding: 7px 12px;
-                        font-weight: 100;
-                        border: 1px solid rgba(255, 0, 0, 0.678);
-                        border-radius: 30px;
-                        box-shadow: inset 0px 0px 20px 6px #7e0101;
-                      "
-                    >
-                      <a
-                        href="#"
-                        class="btn-link"
-                        style="color: #ffffff; text-decoration: none"
-                        >Discover more</a
-                      >
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <!-- EXPANDING FOOTPRINT SECTION (simple, no nested table issues) -->
-      <tr>
-        <td style="padding: 0">
-          <table
-            cellspacing="0"
-            cellpadding="0"
-            border="0"
-            role="presentation"
-            style="width: 100%; background-color: #520000; margin: 0 auto"
-          >
-            <tr align="center">
-              <td
-                class="expanding-text"
-                style="
-                  font-size: 22px;
-                  color: white;
-                  padding: 30px 15px 10px 15px;
-                "
-              >
-                Expanding Our Footprint
-              </td>
-            </tr>
-            <tr align="center">
-              <td
-                style="
-                  font-size: 14px;
-                  color: white;
-                  padding: 10px 20px 20px;
-                  line-height: 2;
-                "
-              >
-                As we expand across India, new partner studios enhance support,
-                improve accessibility, and strengthen our installer network,
-                bringing Avery Dennison closer to every market we serve.
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <!-- FOOTPRINT GALLERY – proper 2-col rows, completely restructured with clean layout -->
-      <!-- We create a cleaner multi-row table without any missing closing tags -->
-      <tr>
-        <td style="padding: 0 0 20px 0">
-          <table
-            cellspacing="0"
-            cellpadding="0"
-            border="0"
-            role="presentation"
-            style="width: 100%; background-color: #520000"
-          >
-            <!-- ROW 1: Wrap Nation (left) + Indo Radial Club (right) -->
-            <tr>
-              <td
-                width="50%"
-                valign="top"
-                style="width: 50%; padding: 0 10px 25px 20px"
-              >
-                <table
-                  width="100%"
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                >
-                  <tr>
-                    <td>
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/wrap%20nation.png"
-                        alt="Wrap Nation"
-                        width="100%"
-                        style="
-                          display: block;
-                          width: 100%;
-                          max-width: 100%;
-                          height: auto;
-                          border-radius: 10px;
-                        "
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-top: 12px">
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
-                        alt="location"
-                        width="20"
-                        style="
-                          display: inline-block;
-                          width: 20px;
-                          vertical-align: middle;
-                        "
-                      />
-                      <span
-                        style="
-                          font-size: 14px;
-                          font-weight: 100;
-                          color: white;
-                          display: inline-block;
-                          vertical-align: middle;
-                          padding-left: 5px;
-                        "
-                      >
-                        Kerala Corsa Studio
-                      </span>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td
-                width="50%"
-                valign="top"
-                style="width: 50%; padding: 0 20px 25px 10px"
-              >
-                <table
-                  width="100%"
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                >
-                  <tr>
-                    <td>
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png"
-                        alt="Indo Radial Club"
-                        width="100%"
-                        style="
-                          display: block;
-                          width: 100%;
-                          max-width: 100%;
-                          height: auto;
-                          border-radius: 10px;
-                        "
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-top: 12px">
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
-                        alt="location"
-                        width="20"
-                        style="
-                          display: inline-block;
-                          width: 20px;
-                          vertical-align: middle;
-                        "
-                      />
-                      <span
-                        style="
-                          font-size: 14px;
-                          font-weight: 100;
-                          color: white;
-                          vertical-align: middle;
-                          padding-left: 5px;
-                        "
-                      >
-                        Kerala Corsa Studio
-                      </span>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- ROW 2: Indo Radial Club (left) + Auto Care (right) -->
-            <tr>
-              <td
-                width="50%"
-                valign="top"
-                style="width: 50%; padding: 0 10px 25px 20px"
-              >
-                <table
-                  width="100%"
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                >
-                  <tr>
-                    <td>
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png"
-                        alt="Indo Radial Club"
-                        width="100%"
-                        style="
-                          display: block;
-                          width: 100%;
-                          max-width: 100%;
-                          height: auto;
-                          border-radius: 10px;
-                        "
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-top: 12px">
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
-                        alt="location"
-                        width="20"
-                        style="
-                          display: inline-block;
-                          width: 20px;
-                          vertical-align: middle;
-                        "
-                      />
-                      <span
-                        style="
-                          font-size: 14px;
-                          font-weight: 100;
-                          color: white;
-                          vertical-align: middle;
-                          padding-left: 5px;
-                        "
-                      >
-                        Kerala Corsa Studio
-                      </span>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td
-                width="50%"
-                valign="top"
-                style="width: 50%; padding: 0 20px 25px 10px"
-              >
-                <table
-                  width="100%"
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                >
-                  <tr>
-                    <td>
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/auto%20care.png"
-                        alt="Auto Care"
-                        width="100%"
-                        style="
-                          display: block;
-                          width: 100%;
-                          max-width: 100%;
-                          height: auto;
-                          border-radius: 10px;
-                        "
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-top: 12px">
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
-                        alt="location"
-                        width="20"
-                        style="
-                          display: inline-block;
-                          width: 20px;
-                          vertical-align: middle;
-                        "
-                      />
-                      <span
-                        style="
-                          font-size: 14px;
-                          font-weight: 100;
-                          color: white;
-                          vertical-align: middle;
-                          padding-left: 5px;
-                        "
-                      >
-                        Kerala Corsa Studio
-                      </span>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- ROW 3: Auto Care (left) + Indo Radial Club (right) -->
-            <tr>
-              <td
-                width="50%"
-                valign="top"
-                style="width: 50%; padding: 0 10px 25px 20px"
-              >
-                <table
-                  width="100%"
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                >
-                  <tr>
-                    <td>
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/auto%20care.png"
-                        alt="Auto Care"
-                        width="100%"
-                        style="
-                          display: block;
-                          width: 100%;
-                          max-width: 100%;
-                          height: auto;
-                          border-radius: 10px;
-                        "
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-top: 12px">
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
-                        alt="location"
-                        width="20"
-                        style="
-                          display: inline-block;
-                          width: 20px;
-                          vertical-align: middle;
-                        "
-                      />
-                      <span
-                        style="
-                          font-size: 14px;
-                          font-weight: 100;
-                          color: white;
-                          vertical-align: middle;
-                          padding-left: 5px;
-                        "
-                      >
-                        Kerala Corsa Studio
-                      </span>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td
-                width="50%"
-                valign="top"
-                style="width: 50%; padding: 0 20px 25px 10px"
-              >
-                <table
-                  width="100%"
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                >
-                  <tr>
-                    <td>
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/indo%20radial%20club.png"
-                        alt="Indo Radial Club"
-                        width="100%"
-                        style="
-                          display: block;
-                          width: 100%;
-                          max-width: 100%;
-                          height: auto;
-                          border-radius: 10px;
-                        "
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-top: 12px">
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
-                        alt="location"
-                        width="20"
-                        style="
-                          display: inline-block;
-                          width: 20px;
-                          vertical-align: middle;
-                        "
-                      />
-                      <span
-                        style="
-                          font-size: 14px;
-                          font-weight: 100;
-                          color: white;
-                          vertical-align: middle;
-                          padding-left: 5px;
-                        "
-                      >
-                        Kerala Corsa Studio
-                      </span>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- ROW 4: Wrap Nation (left) + CTA BUTTON (right) -->
-            <tr>
-              <td
-                width="50%"
-                valign="top"
-                style="width: 50%; padding: 0 10px 15px 20px"
-              >
-                <table
-                  width="100%"
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                >
-                  <tr>
-                    <td>
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/wrap%20nation.png"
-                        alt="Wrap Nation"
-                        width="100%"
-                        style="
-                          display: block;
-                          width: 100%;
-                          max-width: 100%;
-                          height: auto;
-                          border-radius: 10px;
-                        "
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" style="padding-top: 12px">
-                      <img
-                        src="https://raw.githubusercontent.com/utkarshtiwari-1121/edm-practice/main/img/location.png"
-                        alt="location"
-                        width="20"
-                        style="
-                          display: inline-block;
-                          width: 20px;
-                          vertical-align: middle;
-                        "
-                      />
-                      <span
-                        style="
-                          font-size: 14px;
-                          font-weight: 100;
-                          color: white;
-                          vertical-align: middle;
-                          padding-left: 5px;
-                        "
-                      >
-                        Kerala Corsa Studio
-                      </span>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td
-                width="50%"
-                valign="middle"
-                align="center"
-                style="width: 50%; padding: 0 20px 15px 10px"
-              >
-                <table
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  role="presentation"
-                  align="center"
-                >
-                  <tr>
-                    <td
-                      style="
-                        color: white;
-                        font-size: 14px;
-                        text-align: center;
-                        padding: 7px 12px;
-                        font-weight: 100;
-                        border: 1px solid rgba(255, 0, 0, 0.678);
-                        border-radius: 30px;
-                        box-shadow: inset 0px 0px 20px 6px #7e0101;
-                      "
-                    >
-                      <a
-                        href="#"
-                        class="btn-link"
-                        style="
-                          background-color: transparent;
-                          color: white;
-                          text-decoration: none;
-                          font-size: 14px;
-                          font-weight: 100;
-                          display: inline-block;
-                        "
-                      >
-                        Discover more
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <!-- THANK YOU SECTION -->
+    </tbody>
+  </table>
+  <table class="row row-14 mobile_hide" align="center" width="100%" border="0" cellpadding="0" cellspacing="0"
+    role="presentation" style="mso-table-lspace:0;mso-table-rspace:0; border-collapse: collapse; border-spacing: 0;">
+    <tbody>
       <tr>
         <td>
-          <table
-            cellspacing="0"
-            cellpadding="0"
-            border="0"
-            role="presentation"
-            style="width: 100%; background-color: #520000; margin: 0 auto"
-          >
-            <tr align="center">
-              <td
-                style="
-                  color: white;
-                  font-size: 22px;
-                  text-align: center;
-                  padding: 30px 30px 40px 30px;
-                  font-weight: 500;
-                  line-height: 1.3;
-                "
-              >
-                Thank you for your partnership in a year defined by innovation
-                and progress. Onward to 2026!
-              </td>
-            </tr>
+          <table class="row-content stack" align="center" vertical-align="middle" border="0" cellpadding="0"
+            cellspacing="0" role="presentation"
+            style="mso-table-lspace:0;mso-table-rspace:0;background-color:#000;border-radius:0;color:#000;padding:0px 30px 30px;width:700px;margin:0 auto;/* border-collapse: collapse; */border-spacing: 0; text-align: center;"
+            width="700" bgcolor="#000">
+            <tbody>
+              <tr>
+                <td>
+
+                  <table width="50%" border="0" cellpadding="0" cellspacing="0" role="presentation" align="center"
+                    style="mso-table-lspace:0;mso-table-rspace:0; border-collapse: unset; border-spacing: 0;">
+                    <tbody>
+                      <tr>
+                        <td class="column column-1" width="50%"
+                          style="mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left;border-bottom:1px solid #fff;border-left:1px solid #fff;border-right:1px solid #fff;border-top:1px solid #fff;padding-bottom:20px;padding-left:30px;padding-right:30px;padding-top:20px;vertical-align:top;border-radius:8px;">
+                          <a href="https://graphics.averydennison.com/ap-en/home/resource-center/training-and-certification/supreme-ppf-installation.html"
+                            style="all:unset;text-decoration: none; color: inherit; cursor: pointer;">
+                            <table class="paragraph_block block-3" width="100%" border="0" cellpadding="0"
+                              cellspacing="0" role="presentation"
+                              style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0;">
+                              <tbody>
+                                <tr>
+                                  <td class="pad">
+                                    <div
+                                      style="color:#fff;direction:ltr;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;font-weight:600;letter-spacing:0;line-height:1.2;text-align:left;mso-line-height-alt:24px">
+                                      <p style="margin:0">Supreme™ PPF Installation Training</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </td>
+              </tr>
+            </tbody>
           </table>
         </td>
       </tr>
-    </table>
-  </body>
+    </tbody>
+  </table>
+  <table class="row row-14 desktop_hide" align="center" width="100%" border="0" cellpadding="0" cellspacing="0"
+    role="presentation" style="mso-table-lspace:0;mso-table-rspace:0; border-collapse: collapse; border-spacing: 0;">
+    <tbody>
+      <tr>
+        <td>
+          <table class="row-content stack" align="center" vertical-align="middle" border="0" cellpadding="0"
+            cellspacing="0" role="presentation"
+            style="mso-table-lspace:0;mso-table-rspace:0;background-color:#000;border-radius:0;color:#000;padding:0px 30px 30px;width:700px;margin:0 auto;/* border-collapse: collapse; */border-spacing: 0; text-align: center;"
+            width="700" bgcolor="#000">
+            <tbody>
+              <tr>
+                <td>
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                    style="mso-table-lspace:0;mso-table-rspace:0; border-collapse: unset; border-spacing: 0;">
+                    <tbody>
+                      <tr>
+                        <td class="column column-1" width="50%"
+                          style="mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left;border-bottom:1px solid #fff;border-left:1px solid #fff;border-right:1px solid #fff;border-top:1px solid #fff;padding-bottom:20px;padding-left:30px;padding-right:30px;padding-top:20px;vertical-align:top;border-radius:8px;">
+                          <a href="https://graphics.averydennison.com/ap-en/home/resource-center/training-and-certification/supreme-ppf-installation.html"
+                            style="all:unset;text-decoration: none; color: inherit; cursor: pointer;">
+                            <table class="paragraph_block block-3" width="100%" border="0" cellpadding="0"
+                              cellspacing="0" role="presentation"
+                              style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0;">
+                              <tbody>
+                                <tr>
+                                  <td class="pad">
+                                    <div
+                                      style="color:#fff;direction:ltr;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;font-weight:600;letter-spacing:0;line-height:1.2;text-align:left;mso-line-height-alt:24px">
+                                      <p style="margin:0">Supreme™ PPF Installation Training</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  <br><br>
+  <hr>
+  <hr><br><br>
+
+  <table class="row row-13" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+    style="mso-table-lspace:0;mso-table-rspace:0;background-size:auto; border-collapse: collapse; border-spacing: 0;">
+    <tbody>
+      <tr>
+        <td>
+          <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+            style="mso-table-lspace:0;mso-table-rspace:0;background-size:auto;border-radius:0;padding-left:20px;padding-right:20px;width:700px;margin:0 auto;/* border-collapse: collapse; */border-spacing: 0;"
+            width="700">
+            <tbody>
+              <tr>
+                <td>
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                    style="mso-table-lspace:0;mso-table-rspace:0;  border-spacing: 0; border-collapse: unset; padding-bottom: 20px; text-align: center;">
+                    <tbody>
+                      <tr>
+                        <td class="column column-1" width="33.33%"
+                          style="mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left;border-bottom:1px solid #000;border-left:1px solid #000;border-right:1px solid #000;border-top:1px solid #000;padding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:20px;vertical-align:top; border-radius: 20px;">
+                          <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad" style="padding-bottom:15px; padding-top:0px">
+                                  <img style="width: 45px; height: 45px;"
+                                    src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/d0be55df-c092-4363-b48e-d8e7d3ac7d35/DEV-COMPOSER/editor_images/ICON-7.png"
+                                    alt="">
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad" style="padding-bottom:10px; padding-top:0px">
+                                  <div
+                                    style="color:#000;direction:ltr;  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;font-weight:100;letter-spacing:0;line-height:1.2;mso-line-height-alt:24px">
+                                    <p style="margin:0"><strong>Superior Solar Control</strong></p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad">
+                                  <div
+                                    style="color:#000;direction:ltr;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;mso-line-height-alt:24px; text-align: center;">
+                                    <p style="margin:0">Reduces heat buildup by rejecting solar energy</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td class="column gap"
+                          style="vertical-align:top;mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;width:20px;height:20px; border-collapse: collapse; border-spacing: 0;"
+                            width="20" height="20"></table>
+                        </td>
+                        <td class="column column-1" width="33.33%"
+                          style="mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left;border-bottom:1px solid #000;border-left:1px solid #000;border-right:1px solid #000;border-top:1px solid #000;padding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:20px;vertical-align:top; border-radius: 20px;">
+                          <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad" style="padding-bottom:15px; padding-top:0px">
+                                  <img style="width: 45px; height: 45px;"
+                                    src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/d0be55df-c092-4363-b48e-d8e7d3ac7d35/DEV-COMPOSER/editor_images/ICON-8.png"
+                                    alt="">
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad" style="padding-bottom:10px; padding-top:0px">
+                                  <div
+                                    style="color:#000;direction:ltr;  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;font-weight:100;letter-spacing:0;line-height:1.2;mso-line-height-alt:24px">
+                                    <p style="margin:0"><strong>Enhanced Resident Comfort</strong></p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad">
+                                  <div
+                                    style="color:#000;direction:ltr;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;mso-line-height-alt:24px; text-align: center;">
+                                    <p style="margin:0">Minimises glare and hotspots for comfortable interiors</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td class="column gap"
+                          style="vertical-align:top;mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;width:20px;height:20px; border-collapse: collapse; border-spacing: 0;"
+                            width="20" height="20"></table>
+                        </td>
+                        <td class="column column-1" width="33.33%"
+                          style="mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left;border-bottom:1px solid #000;border-left:1px solid #000;border-right:1px solid #000;border-top:1px solid #000;padding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:20px;vertical-align:top;  border-radius: 20px;">
+                          <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad" style="padding-bottom:15px; padding-top:0px">
+                                  <img style="width: 45px; height: 45px;"
+                                    src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/d0be55df-c092-4363-b48e-d8e7d3ac7d35/DEV-COMPOSER/editor_images/ICON-6.png"
+                                    alt="">
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad" style="padding-bottom:10px; padding-top:0px">
+                                  <div
+                                    style="color:#000;direction:ltr;  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;font-weight:100;letter-spacing:0;line-height:1.2;mso-line-height-alt:24px">
+                                    <p style="margin:0"><strong>UV Radiation Protection</strong></p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad">
+                                  <div
+                                    style="color:#000;direction:ltr;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;mso-line-height-alt:24px; text-align: center;">
+                                    <p style="margin:0">Blocks over 99% harmful ultraviolet radiation</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="row row-13" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+    style="mso-table-lspace:0;mso-table-rspace:0;background-size:auto; border-collapse: collapse; border-spacing: 0;">
+    <tbody>
+      <tr>
+        <td>
+          <table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+            style="mso-table-lspace:0;mso-table-rspace:0;background-size:auto;border-radius:0;padding-left:20px;padding-right:20px;width:700px;margin:0 auto;/* border-collapse: collapse; */border-spacing: 0;"
+            width="700">
+            <tbody>
+              <tr>
+                <td>
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                    style="mso-table-lspace:0;mso-table-rspace:0;  border-spacing: 0; border-collapse: unset; padding-bottom: 20px; text-align: center;">
+                    <tbody>
+                      <tr>
+                        <td class="column column-1" width="50%"
+                          style="mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left;border-bottom:1px solid #000;border-left:1px solid #000;border-right:1px solid #000;border-top:1px solid #000;padding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:20px;vertical-align:top;  border-radius: 20px;">
+                          <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad" style="padding-bottom:15px; padding-top:0px">
+                                  <img style="width: 45px; height: 45px;"
+                                    src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/d0be55df-c092-4363-b48e-d8e7d3ac7d35/DEV-COMPOSER/editor_images/ICON-2.png"
+                                    alt="">
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad" style="padding-bottom:10px; padding-top:0px">
+                                  <div
+                                    style="color:#000;direction:ltr;  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;font-weight:100;letter-spacing:0;line-height:1.2;mso-line-height-alt:24px">
+                                    <p style="margin:0"><strong>Aesthetic Enhancement</strong></p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad">
+                                  <div
+                                    style="color:#000;direction:ltr;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;mso-line-height-alt:24px; text-align: center;">
+                                    <p style="margin:0">Variety of finishes from neutral to reflective</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td class="column gap"
+                          style="vertical-align:top;mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;width:20px;height:20px; border-collapse: collapse; border-spacing: 0;"
+                            width="20" height="20"></table>
+                        </td>
+                        <td class="column column-1" width="50%"
+                          style="mso-table-lspace:0;mso-table-rspace:0;font-weight:400;text-align:left;border-bottom:1px solid #000;border-left:1px solid #000;border-right:1px solid #000;border-top:1px solid #000;padding-bottom:20px;padding-left:10px;padding-right:10px;padding-top:20px;vertical-align:top;  border-radius: 20px;">
+                          <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad" style="padding-bottom:15px; padding-top:0px">
+                                  <img style="width: 45px; height: 45px;"
+                                    src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/d0be55df-c092-4363-b48e-d8e7d3ac7d35/DEV-COMPOSER/editor_images/ICON-3.png"
+                                    alt="">
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad" style="padding-bottom:10px; padding-top:0px">
+                                  <div
+                                    style="color:#000;direction:ltr;  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;font-weight:100;letter-spacing:0;line-height:1.2;mso-line-height-alt:24px">
+                                    <p style="margin:0"><strong>Improved Energy Efficiency</strong></p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0"
+                            role="presentation"
+                            style="mso-table-lspace:0;mso-table-rspace:0;word-break:break-word; border-collapse: collapse; border-spacing: 0; text-align: center;">
+                            <tbody>
+                              <tr>
+                                <td class="pad">
+                                  <div
+                                    style="color:#000;direction:ltr;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;font-weight:400;letter-spacing:0;line-height:1.5;text-align:left;mso-line-height-alt:24px; text-align: center;">
+                                    <p style="margin:0">Reduces HVAC load for lower energy consumption</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
 </html>
